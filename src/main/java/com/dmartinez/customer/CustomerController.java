@@ -13,6 +13,7 @@ public class CustomerController {
     public CustomerController(CustomerService customerService) {
         this.customerService = customerService;
     }
+
     @GetMapping("/api/v1/customers")
     public List<Customer> getCustomers() {
         return customerService.getAllCustomers();
