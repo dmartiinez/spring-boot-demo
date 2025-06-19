@@ -25,7 +25,7 @@ public class Customer {
             strategy = GenerationType.SEQUENCE,
             generator = "customer_id_seq"
     )
-    private Long id;
+    private Integer id;
     @Column(nullable = false)
     private String name;
     @Column(nullable = false)
@@ -41,18 +41,18 @@ public class Customer {
         this.age = age;
     }
 
-    public Customer(Long id, String name, String email, Integer age) {
+    public Customer(Integer id, String name, String email, Integer age) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.age = age;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

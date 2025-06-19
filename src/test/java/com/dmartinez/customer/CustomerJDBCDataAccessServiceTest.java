@@ -46,7 +46,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {
         );
         customerJDBCDataAccessService.insertCustomer(customer);
 
-        Long id = customerJDBCDataAccessService.selectAllCustomers()
+        int id = customerJDBCDataAccessService.selectAllCustomers()
                 .stream()
                 .filter(c -> c.getEmail().equals(email))
                 .map(Customer::getId)
@@ -65,7 +65,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {
 
     @Test
     void willReturnEmptyWhenSelectCustomerById() {
-        Long id = -1L;
+        int id = -1;
 
         var actual = customerJDBCDataAccessService.selectCustomerById(id);
 
@@ -109,7 +109,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {
 
         customerJDBCDataAccessService.insertCustomer(customer);
 
-        Long id = customerJDBCDataAccessService.selectAllCustomers()
+        int id = customerJDBCDataAccessService.selectAllCustomers()
                 .stream()
                 .filter(c -> c.getEmail().equals(email))
                 .map(Customer::getId)
@@ -123,7 +123,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {
 
     @Test
     void existsCustomerWithIdReturnsFalseWhenIdDoesNotExist() {
-        Long id = -1L;
+        int id = -1;
 
         boolean actual = customerJDBCDataAccessService.existsCustomerWithId(id);
 
@@ -141,7 +141,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {
 
         customerJDBCDataAccessService.insertCustomer(customer);
 
-        Long id = customerJDBCDataAccessService.selectAllCustomers()
+        int id = customerJDBCDataAccessService.selectAllCustomers()
                 .stream()
                 .filter(c -> c.getEmail().equals(email))
                 .map(Customer::getId)
@@ -166,7 +166,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {
 
         customerJDBCDataAccessService.insertCustomer(customer);
 
-        Long id = customerJDBCDataAccessService.selectAllCustomers()
+        int id = customerJDBCDataAccessService.selectAllCustomers()
                 .stream()
                 .filter(c -> c.getEmail().equals(email))
                 .map(Customer::getId)
@@ -200,7 +200,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {
 
         customerJDBCDataAccessService.insertCustomer(customer);
 
-        Long id = customerJDBCDataAccessService.selectAllCustomers()
+        int id = customerJDBCDataAccessService.selectAllCustomers()
                 .stream()
                 .filter(c -> c.getEmail().equals(email))
                 .map(Customer::getId)
@@ -238,7 +238,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {
 
         customerJDBCDataAccessService.insertCustomer(customer);
 
-        Long id = customerJDBCDataAccessService.selectAllCustomers()
+        int id = customerJDBCDataAccessService.selectAllCustomers()
                 .stream()
                 .filter(c -> c.getEmail().equals(email))
                 .map(Customer::getId)
@@ -275,7 +275,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {
 
         customerJDBCDataAccessService.insertCustomer(customer);
 
-        Long id = customerJDBCDataAccessService.selectAllCustomers()
+        int id = customerJDBCDataAccessService.selectAllCustomers()
                 .stream()
                 .filter(c -> c.getEmail().equals(email))
                 .map(Customer::getId)
@@ -313,7 +313,7 @@ class CustomerJDBCDataAccessServiceTest extends AbstractTestcontainers {
 
         customerJDBCDataAccessService.insertCustomer(customer);
 
-        Long id = customerJDBCDataAccessService.selectAllCustomers()
+        int id = customerJDBCDataAccessService.selectAllCustomers()
                 .stream()
                 .filter(c -> c.getEmail().equals(email))
                 .map(Customer::getId)
