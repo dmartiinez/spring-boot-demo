@@ -13,6 +13,18 @@ services:
     networks:
       - postgres
     restart: unless-stopped
+  dmartinez-api:
+    container_name: dmartinez-api
+    image: damartinez29/dmartinez-api
+    ports:
+      - "8088:8080"
+    networks:
+      - postgres
+    depends_on:
+      - postgres
+    restart: unless-stopped
+    command:
+      - --spring.datasource.url=jdbc:postgresql://postgres:5432/customer
   pgadmin:
     container_name: pgadmin
     image: dpage/pgadmin4
