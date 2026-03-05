@@ -1,3 +1,4 @@
+com/dmartinez/customer/CustomerJDBCDataAccessService.class
 com/dmartinez/customer/CustomerDao.class
 com/dmartinez/customer/CustomerListDataAccessService.class
 com/dmartinez/exception/ResourceNotFoundException.class
@@ -7,6 +8,7 @@ com/dmartinez/exception/DuplicateResourceException.class
 com/dmartinez/customer/CustomerController.class
 com/dmartinez/customer/CustomerRepository.class
 com/dmartinez/customer/CustomerUpdateRequest.class
+com/dmartinez/customer/CustomerRowMapper.class
 com/dmartinez/Main.class
 com/dmartinez/customer/CustomerJPADataAccessService.class
 com/dmartinez/exception/RequestValidationException.class
