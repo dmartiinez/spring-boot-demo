@@ -1,8 +1,0 @@
-/Users/daniela/JavaPractive/spring-boot-fullstack/backend/src/test/java/com/dmartinez/AbstractTestcontainers.java
-/Users/daniela/JavaPractive/spring-boot-fullstack/backend/src/test/java/com/dmartinez/TestcontainersTest.java
-/Users/daniela/JavaPractive/spring-boot-fullstack/backend/src/test/java/com/dmartinez/customer/CustomerJDBCDataAccessServiceTest.java
-/Users/daniela/JavaPractive/spring-boot-fullstack/backend/src/test/java/com/dmartinez/customer/CustomerJPADataAccessServiceTest.java
-/Users/daniela/JavaPractive/spring-boot-fullstack/backend/src/test/java/com/dmartinez/customer/CustomerRepositoryTest.java
-/Users/daniela/JavaPractive/spring-boot-fullstack/backend/src/test/java/com/dmartinez/customer/CustomerRowMapperTest.java
-/Users/daniela/JavaPractive/spring-boot-fullstack/backend/src/test/java/com/dmartinez/customer/CustomerServiceTest.java
-/Users/daniela/JavaPractive/spring-boot-fullstack/backend/src/test/java/com/dmartinez/journey/CustomerIntegrationTest.java

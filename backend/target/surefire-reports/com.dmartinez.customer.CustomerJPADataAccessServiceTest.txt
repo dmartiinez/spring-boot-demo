@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.dmartinez.customer.CustomerJPADataAccessServiceTest
--------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.163 s -- in com.dmartinez.customer.CustomerJPADataAccessServiceTest
