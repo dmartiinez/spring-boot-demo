@@ -14,10 +14,6 @@
 	<name>dmartinez-api</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
-	<organization>
-		<name>damartinez</name>
-		<url>https://dmartinez.com</url>
-	</organization>
 	<licenses>
 		<license/>
 	</licenses>
@@ -33,6 +29,8 @@
 	<properties>
 		<java.version>17</java.version>
 		<docker.username>damartinez29</docker.username>
+		<docker.image.name>dmartinez-api</docker.image.name>
+		<docker.image.tag/>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -181,7 +179,7 @@
 						</platforms>
 					</from>
 					<to>
-						<image>docker.io/${docker.username}/${project.artifactId}:${project.version}</image>
+						<image>docker.io/${docker.username}/${docker.image.name}:${docker.image.tag}</image>
 						<tags>
 							<tag>latest</tag>
 						</tags>
