@@ -32,9 +32,11 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: Slack commit message and sha
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message }}
         run: >
           curl -X POST -H 'Content-type: application/json'
-          --data '{"text":":github: https://github.com/dmartiinez/spring-boot-fullstack/commit/${{github.sha}} - ${{github.event.head_commit.message}}"}'
+          --data '{"text":":github: https://github.com/dmartiinez/spring-boot-fullstack/commit/${{github.sha}} - ${COMMIT_MSG}"}'
           ${{ secrets.SLACK_WEBHOOK_URL }}
       - name: Deployment Message to Slack
         run: >
